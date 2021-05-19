@@ -1,0 +1,4 @@
+The "make_pub_key.py" file writes the public key to a new .pem file that is then referenced in the ransomware.
+
+The "ransomware.py" is meant to encrypt .png, .txt, .docx, .doc, .pdf, .jpg, and .jpeg files
+
