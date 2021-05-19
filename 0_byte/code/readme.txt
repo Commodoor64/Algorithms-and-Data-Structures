@@ -1,1 +1,17 @@
-sample
+Github isn't letting me store empty folders in here.
+
+In my program all of the empty folders are created in the "code" folder
+
+I used the makefolder.py to turn a simple go program into folder names but it doesn't properly turn the initial spaces into underscores so I did that manually.
+
+test.go is the file with the origional code I used to test the program. 
+
+you can already find this in the makefolder and compiler(main) files but this is how I translated special characters not allowed in folder names:
+
+/ -> {slash}
+: -> {col}
+* -> {star}
+" -> {quote}
+< -> {leftcarrot}
+> ->{rightcarrot}
+
